@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/syle.min.css" />
+    <title>Countries</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <h1 class="header__title">Where in the world?</h1>
+          <button class="header__darkmode">
+            <img src="./assets/svgs/darkmode.svg" alt="darkmode svg" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="countries">
+        <div class="container">
+          <div class="countries__wrapper">
+            <div class="countries__select">
+              <form action="" class="countries__form">
+                <div>
+                  <img
+                    src="./assets/svgs/icon-search-black.svg"
+                    alt="icon-search"
+                  />
+                </div>
+                <input
+                  type="search"
+                  name="name"
+                  id="countries__search"
+                  class="countries__searchinput"
+                  placeholder="Search for a country…"
+                />
+              </form>
+              <div class="countries__filter">
+                <div class="countries__filterbox flex">
+                  <p class="countries__filtertext">Filter by Region</p>
+                  <img src="./assets/svgs/Shape.svg" alt="shape arrow down" />
+                </div>
+                <div class="countries__btns">
+                  <button class="countries__btn" value="All">All</button>
+                  <button class="countries__btn" value="Africa">Africa</button>
+                  <button class="countries__btn" value="America">
+                    America
+                  </button>
+                  <button class="countries__btn" value="Asia">Asia</button>
+                  <button class="countries__btn" value="Europe">Europe</button>
+                  <button class="countries__btn" value="Oceania">
+                    Oceania
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul class="countries__list">
+              <li class="countries__item">
+                <img
+                  src="./assets/images/1280px-Flag_of_Germany.svg.png"
+                  alt="Geramny"
+                />
+                <div class="countries__box">
+                  <h3 class="countries__title">Germany</h3>
+                  <p class="countries__population">
+                    Population: <span>81,770,900</span>
+                  </p>
+                  <p class="countries__region">Region: <span>Europe</span></p>
+                  <p class="countries__capital">Capital: <span>Berlin</span></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <template id="countries-card">
+        <li class="countries__item">
+          <img
+            id="country-img"
+            class="countries__image"
+            src="./assets/images/1280px-Flag_of_Germany.svg.png"
+            alt="Geramny"
+          />
+          <div class="countries__box">
+            <h3 class="countries__title">Germany</h3>
+            <p class="countries__population">
+              Population: <span>81,770,900</span>
+            </p>
+            <p class="countries__region">Region: <span>Europe</span></p>
+            <p class="countries__capital">Capital: <span>Berlin</span></p>
+          </div>
+        </li>
+      </template>
+    </main>
+    <footer class="footer"></footer>
+
+    <script src="./js/utils/renderList.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

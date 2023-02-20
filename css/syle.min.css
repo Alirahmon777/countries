@@ -1,0 +1,237 @@
+/* nunito-sans-200 - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/nunito-sans-v12-latin_cyrillic-200.woff2") format("woff2"), url("../fonts/nunito-sans-v12-latin_cyrillic-200.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* nunito-sans-300 - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/nunito-sans-v12-latin_cyrillic-300.woff2") format("woff2"), url("../fonts/nunito-sans-v12-latin_cyrillic-300.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* nunito-sans-regular - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/nunito-sans-v12-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/nunito-sans-v12-latin_cyrillic-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* nunito-sans-600 - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/nunito-sans-v12-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/nunito-sans-v12-latin_cyrillic-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* nunito-sans-700 - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/nunito-sans-v12-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/nunito-sans-v12-latin_cyrillic-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* nunito-sans-800 - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/nunito-sans-v12-latin_cyrillic-800.woff2") format("woff2"), url("../fonts/nunito-sans-v12-latin_cyrillic-800.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* nunito-sans-900 - latin_cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/nunito-sans-v12-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/nunito-sans-v12-latin_cyrillic-900.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: "Nunito Sans";
+  background: #fafafa;
+}
+
+.container {
+  width: 1250px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 24px 0;
+  background: #fff;
+  box-shadow: 0 1px 10px #e1e1e1;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.header__title {
+  font-family: "Nunito Sans";
+  font-weight: 800;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: #111517;
+}
+.header__darkmode {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.countries {
+  margin-top: 48px;
+}
+.countries__select {
+  display: flex;
+  justify-content: space-between;
+}
+.countries__form {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+}
+.countries__form div {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 32px;
+  height: 100%;
+  cursor: pointer;
+  border-right: 1px solid #e9e9e9;
+}
+.countries__searchinput {
+  width: 386px;
+  height: 100%;
+  padding: 0 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #848484;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.countries__searchinput::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #848484;
+}
+.countries__searchinput::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #848484;
+}
+.countries__filter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+.countries__filterbox {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 19.5px 16px 24px;
+  background: #ffffff;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.countries__btns {
+  position: absolute;
+  top: 108%;
+  padding: 16px 0 16px 24px;
+  width: 200px;
+  display: none;
+  gap: 8px;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+  z-index: 3;
+}
+.countries__btn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #111517;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  cursor: pointer;
+  text-align: left;
+}
+.countries__list {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 75px;
+}
+.countries__item {
+  width: 264px;
+  height: 336px;
+  background: #ffffff;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.countries__image {
+  width: 264px;
+  height: 160px;
+}
+.countries__box {
+  padding: 24px 0 46px 24px;
+}
+.countries__title {
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  color: #111517;
+}
+.countries__population, .countries__capital, .countries__region {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111517;
+}
+.countries__population span, .countries__capital span, .countries__region span {
+  font-weight: 300;
+}/*# sourceMappingURL=syle.min.css.map */
